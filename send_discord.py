@@ -29,7 +29,7 @@ def format_file_content(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
             lines = f.read().splitlines()
-        return "\n".join([f"> #{line.strip()}" for line in lines if line.strip()])
+        return "\n".join([f"> # {line.strip()}" for line in lines if line.strip()])
     except FileNotFoundError:
         return "> # File noidung.txt không tồn tại."
 
