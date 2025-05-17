@@ -8,7 +8,7 @@ from flask import Flask
 TOKEN = os.getenv("DISCORD_TOKEN")  # Token tài khoản Discord
 CHANNEL_ID = os.getenv("CHANNEL_ID")  # ID của kênh Discord
 FILE_PATH = "noidung.txt"  # File chứa nội dung
-DELAY = 10  # Thời gian gửi tin nhắn lại mỗi lần (giây)
+DELAY = 6  # Thời gian gửi tin nhắn lại mỗi lần (giây)
 
 # ========== Header cho API Discord ==========
 headers = {
